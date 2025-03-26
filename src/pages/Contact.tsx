@@ -20,7 +20,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Endereço',
-      details: 'Av. Paulista, 1578, São Paulo - SP',
+      details: 'Maceió-Alagoas',
       href: 'https://www.google.com/maps/place/Macei%C3%B3,+AL/@-9.594111,-35.982062,11z/data=!3m1!4b1!4m6!3m5!1s0x70146fcd6688849:0xee2c725b43e07653!8m2!3d-9.6660417!4d-35.7352167!16s%2Fg%2F11bc6rz59h?entry=tts&g_ep=EgoyMDI1MDMyMy4wIPu8ASoASAFQAw%3D%3D&skid=f99a85a7-f683-47ec-93fe-57e729f19292',
     },
     {
