@@ -8,20 +8,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'contato@webconductor.com',
-      href: 'mailto:contato@webconductor.com',
+      details: 'arinelsonsnts@gmail.com',
+      href: 'mailto:arinelsonsnts@gmail.com',
     },
     {
       icon: Phone,
       title: 'Telefone',
-      details: '+55 (11) 99999-9999',
-      href: 'tel:+5511999999999',
+      details: '+55 (82) 99179-9095',
+      href: 'tel:+558291799095',
     },
     {
       icon: MapPin,
       title: 'Endereço',
       details: 'Av. Paulista, 1578, São Paulo - SP',
-      href: 'https://maps.google.com/?q=Av.+Paulista,+1578,+São+Paulo+-+SP',
+      href: 'https://www.google.com/maps/place/Macei%C3%B3,+AL/@-9.594111,-35.982062,11z/data=!3m1!4b1!4m6!3m5!1s0x70146fcd6688849:0xee2c725b43e07653!8m2!3d-9.6660417!4d-35.7352167!16s%2Fg%2F11bc6rz59h?entry=tts&g_ep=EgoyMDI1MDMyMy4wIPu8ASoASAFQAw%3D%3D&skid=f99a85a7-f683-47ec-93fe-57e729f19292',
     },
     {
       icon: Clock,
@@ -80,7 +80,7 @@ const Contact = () => {
             {/* Map */}
             <div className="rounded-xl overflow-hidden h-80 mb-8">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0976156945937!2d-46.65767738439809!3d-23.562611284682913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201578%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200!5e0!3m2!1spt-BR!2sbr!4v1635789876543!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125888.2572284011!2d-35.68667855!3d-9.59457475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70146fcd6688849%3A0xee2c725b43e07653!2zTWFjZWnDsywgQUw!5e0!3m2!1spt-BR!2sbr!4v1743001219950!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
