@@ -33,12 +33,10 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
-  // Function to check if a path is active considering hash navigation
-  const isActivePath = (path: string) => {
-    if (path === '/') {
-      return location.pathname === '/' && !location.hash;
-    }
-    return location.hash === path.substring(1); // remove the leading '/' from the path
+  // Check if the current hash matches the nav item
+  const isActive = (path: string) => {
+    if (path === '/') return location.pathname === '/' && !location.hash;
+    return location.hash === path.substring(path.indexOf('#'));
   };
 
   return (
@@ -69,7 +67,7 @@ const Header: React.FC = () => {
                 'text-sm font-medium transition-colors duration-200 relative',
                 'after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:origin-left',
                 'after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300',
-                isActivePath(item.path)
+                isActive(item.path) 
                   ? 'text-primary after:scale-x-100' 
                   : 'text-foreground hover:text-primary'
               )}
@@ -103,7 +101,7 @@ const Header: React.FC = () => {
             to={item.path}
             className={cn(
               'text-xl font-medium transition-colors duration-200',
-              isActivePath(item.path)
+              isActive(item.path) 
                 ? 'text-primary' 
                 : 'text-foreground hover:text-primary'
             )}
