@@ -11,10 +11,10 @@ const Header: React.FC = () => {
 
   const navItems = [
     { name: 'Início', path: '/' },
-    { name: 'Serviços', path: '/#services' },
-    { name: 'Preços', path: '/#pricing' },
-    { name: 'Portfólio', path: '/#portfolio' },
-    { name: 'Contato', path: '/#contact' },
+    { name: 'Serviços', path: '/services' },
+    { name: 'Preços', path: '/pricing' },
+    { name: 'Portfólio', path: '/portfolio' },
+    { name: 'Contato', path: '/contact' },
   ];
 
   useEffect(() => {
@@ -32,12 +32,6 @@ const Header: React.FC = () => {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location.pathname]);
-
-  // Check if the current hash matches the nav item
-  const isActive = (path: string) => {
-    if (path === '/') return location.pathname === '/' && !location.hash;
-    return location.hash === path.substring(path.indexOf('#'));
-  };
 
   return (
     <header
@@ -67,7 +61,7 @@ const Header: React.FC = () => {
                 'text-sm font-medium transition-colors duration-200 relative',
                 'after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:origin-left',
                 'after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300',
-                isActive(item.path) 
+                location.pathname === item.path 
                   ? 'text-primary after:scale-x-100' 
                   : 'text-foreground hover:text-primary'
               )}
@@ -101,7 +95,7 @@ const Header: React.FC = () => {
             to={item.path}
             className={cn(
               'text-xl font-medium transition-colors duration-200',
-              isActive(item.path) 
+              location.pathname === item.path 
                 ? 'text-primary' 
                 : 'text-foreground hover:text-primary'
             )}

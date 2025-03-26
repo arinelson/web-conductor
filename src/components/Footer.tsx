@@ -44,22 +44,22 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/#services" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
                   Serviços
                 </Link>
               </li>
               <li>
-                <Link to="/#pricing" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
                   Preços
                 </Link>
               </li>
               <li>
-                <Link to="/#portfolio" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
                   Portfólio
                 </Link>
               </li>
               <li>
-                <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contato
                 </Link>
               </li>
@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
           <p className="mt-2 text-sm">
             Idealizado por{" "}
             <a 
-              href="https://wa.me/558291799095" 
+              href="https://wa.me/5511999999999" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary hover:underline"
