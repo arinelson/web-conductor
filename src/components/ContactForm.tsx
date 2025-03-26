@@ -27,12 +27,29 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
     e.preventDefault();
     setLoading(true);
     
-    // Simulate API call
+    // Criar a mensagem formatada para o WhatsApp
+    const whatsappMessage = `Oi, preenchi o formulário e vi pelo Web Condutor:\n\nNOME: ${formData.name}\nEMAIL: ${formData.email}\nTELEFONE: ${formData.phone}\nMENSAGEM: ${formData.message}`;
+    
+    // Codificar a mensagem para URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Número do WhatsApp
+    const whatsappNumber = "558291799095";
+    
+    // URL do WhatsApp com a mensagem
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Simulando um pequeno atraso antes de redirecionar (para feedback visual)
     setTimeout(() => {
-      toast.success('Mensagem enviada com sucesso!', {
-        description: 'Entraremos em contato em breve.',
+      // Mostrar mensagem de sucesso
+      toast.success('Redirecionando para o WhatsApp...', {
+        description: 'Você será redirecionado em instantes.',
       });
       
+      // Abrir o WhatsApp em uma nova aba
+      window.open(whatsappUrl, '_blank');
+      
+      // Limpar o formulário
       setFormData({
         name: '',
         email: '',
@@ -41,7 +58,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
       });
       
       setLoading(false);
-    }, 1500);
+    }, 1000);
   };
 
   return (
