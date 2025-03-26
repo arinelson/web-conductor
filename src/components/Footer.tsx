@@ -87,6 +87,17 @@ const Footer: React.FC = () => {
 
         <div className="mt-12 pt-6 border-t border-muted text-center text-muted-foreground">
           <p>© {currentYear} WebConductor. Todos os direitos reservados.</p>
+          <p className="mt-2 text-sm">
+            Idealizado por{" "}
+            <a 
+              href="https://wa.me/5511999999999" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Arinelson Santos
+            </a>
+          </p>
         </div>
       </div>
     </footer>
