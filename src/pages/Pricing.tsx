@@ -22,7 +22,7 @@ const Pricing = () => {
     {
       id: 'landing-page',
       name: 'Landing Page',
-      price: 'R$ 1.200,00',
+      price: 'R$ 1.500,00',
       description: 'Perfeito para promover um produto ou serviço específico.',
       icon: Layout,
       features: [
