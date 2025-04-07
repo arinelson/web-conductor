@@ -27,7 +27,7 @@ const Services = () => {
       title: 'Landing Page',
       description: 'Uma página de alta conversão focada em vender um produto ou serviço específico.',
       icon: Layout,
-      price: 'R$ 1.200,00',
+      price: 'R$ 1.500,00',
       deliveryTime: '7 dias úteis',
       features: [
         { title: 'Design responsivo (móvel e desktop)', included: true },
