@@ -12,7 +12,7 @@ const Index = () => {
       title: 'Landing Page',
       description: 'Página de alta conversão focada em vender um produto ou serviço específico.',
       icon: Layout,
-      price: 'R$ 1.200,00',
+      price: 'R$ 1.500,00',
       deliveryTime: '7 dias úteis'
     },
     {
